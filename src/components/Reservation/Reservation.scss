@@ -1,0 +1,61 @@
+@import "../../styles/mixins.scss";
+.reservation {
+  background-color: #9ed3ba;
+  padding-block: 6rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__right {
+    margin-left: 5rem;
+
+    @include respond(tab-port) {
+      margin-left: 0;
+    }
+  }
+  img {
+    width: 100%;
+
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1.4rem;
+  }
+
+  button {
+    margin-top: 1rem;
+    width: 30%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  input {
+    border: 2px #e4e7eb;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    width: 60%;
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
+    @include respond(phone) {
+      width: 80%;
+    }
+  }
+}

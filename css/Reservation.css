@@ -1,0 +1,63 @@
+.reservation {
+  background-color: #9ed3ba;
+  padding-block: 6rem;
+}
+.reservation__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .reservation__container {
+    grid-template-columns: 1fr;
+  }
+}
+.reservation__right {
+  margin-left: 5rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .reservation__right {
+    margin-left: 0;
+  }
+}
+.reservation img {
+  width: 100%;
+}
+@media only screen and (max-width: 56.25em) {
+  .reservation img {
+    display: none;
+  }
+}
+.reservation h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
+.reservation button {
+  margin-top: 1rem;
+  width: 30%;
+}
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.reservation input {
+  border: 2px #e4e7eb;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  width: 60%;
+}
+@media only screen and (max-width: 56.25em) {
+  .reservation input {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .reservation input {
+    width: 80%;
+  }
+}/*# sourceMappingURL=Reservation.css.map */

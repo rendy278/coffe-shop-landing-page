@@ -1,0 +1,47 @@
+@import "../../styles/mixins.scss";
+
+.hero {
+  padding-block: 3rem;
+  &__container {
+    display: grid;
+    padding-top: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 8rem;
+    place-items: center;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 1.1;
+    font-family: "IBM Plex Sans", sans-serif;
+
+    @include respond(tab-port) {
+      font-size: 4rem;
+    }
+  }
+  span {
+    font-weight: 400;
+  }
+  p {
+    margin-block: 1.5rem 3rem;
+  }
+  img {
+    width: 90%;
+    margin-left: 2.8rem;
+  }
+  &__left {
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+  &__right {
+    @include respond(tab-port) {
+      grid-row: 1;
+    }
+  }
+}

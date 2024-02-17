@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@import "./styles/mixins.scss";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Mengubah box-sizing menjadi border-box untuk konsistensi */
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  color: #111827;
+  background-color: #f3ebe8;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-family: "Inter", sans-serif;
+}
+
+.button-outline {
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #111827;
+
+  &:hover {
+    background-color: #f3d7cc;
+  }
+}
+
+.button-primary {
+  background-color: #ff7377;
+  color: #fff;
+  font-weight: 500;
+  padding-block: 0.8rem; /* Menggunakan padding-block untuk konsistensi */
+
+  &:hover {
+    background-color: #f06479;
+  }
+}
+
+.p-1 {
+  color: #374151;
+  letter-spacing: -0.015rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.p-2 {
+  letter-spacing: -0.015rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #6a7280;
+}
+
+h2,
+h3 {
+  color: #111827;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+}
+
+/* Tambahkan space setelah deklarasi mixins */

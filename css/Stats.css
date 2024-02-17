@@ -1,0 +1,33 @@
+.stats {
+  padding-block: 4rem;
+}
+.stats__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: space-between;
+  padding-inline: 10rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .stats__container {
+    padding-inline: 2rem;
+    justify-content: center;
+  }
+}
+.stats__point {
+  text-align: center;
+}
+.stats h1 {
+  color: #ff7377;
+  letter-spacing: -0.025rem;
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+}
+.stats p {
+  letter-spacing: -0.015rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}/*# sourceMappingURL=Stats.css.map */

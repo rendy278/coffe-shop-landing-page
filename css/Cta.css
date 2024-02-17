@@ -1,0 +1,46 @@
+.cta__container {
+  background-image: url("../../assets/cta-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-block: 8rem;
+  border-radius: 2rem;
+  margin-bottom: 6rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .cta__container {
+    padding-bottom: 4rem;
+  }
+}
+.cta__flex {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 5%;
+  transform: translateY(25%);
+}
+@media only screen and (max-width: 37.5em) {
+  .cta__flex {
+    transform: translateY(0%);
+  }
+}
+.cta__img {
+  width: 100%;
+}
+.cta__text {
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+}
+.cta h2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #111827;
+  margin-bottom: 1.2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=Cta.css.map */

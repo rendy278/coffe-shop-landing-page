@@ -1,0 +1,26 @@
+.footer {
+  background-color: #fff;
+  padding-block: 3rem;
+}
+.footer img {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+.footer__links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+.footer li {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer li:hover {
+  color: #f06479;
+}/*# sourceMappingURL=Footer.css.map */

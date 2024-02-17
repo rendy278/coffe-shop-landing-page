@@ -1,0 +1,14 @@
+@import "../../styles/mixins.scss";
+
+.wrapper {
+  max-width: 1440px;
+  padding-inline: 2rem;
+  margin-inline: auto;
+
+  @include respond(tab-land) {
+    padding-inline: 1rem;
+  }
+  @include respond(phone) {
+    padding-inline: 0.5rem;
+  }
+}

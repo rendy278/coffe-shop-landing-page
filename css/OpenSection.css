@@ -1,0 +1,67 @@
+.open {
+  padding-block: 4rem 8rem;
+}
+.open__container {
+  padding-inline: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .open__container {
+    padding-inline: 1rem;
+  }
+}
+.open__first, .open__second {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7rem;
+}
+@media only screen and (max-width: 75em) {
+  .open__first, .open__second {
+    gap: 4rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .open__first, .open__second {
+    grid-template-columns: 1fr;
+  }
+}
+.open__text {
+  width: 80%;
+}
+@media only screen and (max-width: 56.25em) {
+  .open__text {
+    order: 1;
+    width: 100%;
+  }
+}
+.open img {
+  width: 110%;
+}
+@media only screen and (max-width: 56.25em) {
+  .open img {
+    width: 100%;
+  }
+}
+.open h2 {
+  letter-spacing: -0.025rem;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: #111827;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .open h2 {
+    font-size: 2.5rem;
+  }
+}
+.open p {
+  color: #374151;
+  letter-spacing: -0.015rem;
+  font-size: 1.125;
+  line-height: 1.75;
+}/*# sourceMappingURL=OpenSection.css.map */

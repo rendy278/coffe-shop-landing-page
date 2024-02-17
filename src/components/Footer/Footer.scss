@@ -1,0 +1,28 @@
+@import "../../styles/mixins.scss";
+
+.footer {
+  background-color: #fff;
+  padding-block: 3rem;
+
+  img {
+    width: fit-content;
+    margin-inline: auto;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 3rem;
+  }
+  li {
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #f06479;
+    }
+  }
+}

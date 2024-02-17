@@ -1,0 +1,34 @@
+@import "../../styles/mixins.scss";
+.stats {
+  padding-block: 4rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-between;
+    padding-inline: 10rem;
+
+    @include respond(tab-port) {
+      padding-inline: 2rem;
+      justify-content: center;
+    }
+  }
+  &__point {
+    text-align: center;
+  }
+  h1 {
+    color: #ff7377;
+    letter-spacing: -0.025rem;
+    font-size: 3.5rem;
+    line-height: 1.1;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+  }
+  p {
+    letter-spacing: -0.015rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}

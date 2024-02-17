@@ -1,0 +1,82 @@
+@import "../../styles/mixins.scss";
+
+.flower {
+  padding-block: 4rem 9rem;
+  &__text {
+    width: 60%;
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+
+    @include respond(tab-port) {
+      width: 80%;
+    }
+    @include respond(phone) {
+      width: 100%;
+    }
+  }
+  h2 {
+    letter-spacing: -0.025rem;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    letter-spacing: -0.015rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    margin-block: 1.2rem 0.2rem;
+  }
+
+  &__card {
+    padding: 2rem 5rem;
+    text-align: center;
+
+    p {
+      letter-spacing: -0.015rem;
+      font-size: 1.1;
+      line-height: 1.75;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  &__btn {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 3rem;
+  }
+  .react-multiple-carousel-list {
+    @include respond(phone) {
+      padding-bottom: 2%;
+    }
+  }
+  .react-multiple-carousel__arrow--left {
+    left: 0;
+    @include respond(phone) {
+      bottom: 0;
+      left: 32%;
+    }
+  }
+  .react-multiple-carousel__arrow--right {
+    right: 0;
+    @include respond(phone) {
+      bottom: 0;
+      right: 32%;
+    }
+  }
+  .react-multiple__arrow {
+    background-color: rgba(225, 225, 225, 0.64);
+    color: #000;
+    opacity: 50%;
+    min-width: 1rem;
+    min-height: 1rem;
+  }
+  .react-multiple-carousel-arrow:hover {
+    opacity: 100%;
+    background-color: #fff;
+  }
+  .react-multiple-carousel-arrow::before {
+    color: #000;
+  }
+}

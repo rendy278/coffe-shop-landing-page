@@ -1,0 +1,48 @@
+.hero {
+  padding-block: 3rem;
+}
+.hero__container {
+  display: grid;
+  padding-top: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 8rem;
+  place-items: center;
+}
+@media only screen and (max-width: 56.25em) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+.hero h1 {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 1.1;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+@media only screen and (max-width: 56.25em) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+.hero span {
+  font-weight: 400;
+}
+.hero p {
+  margin-block: 1.5rem 3rem;
+}
+.hero img {
+  width: 90%;
+  margin-left: 2.8rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .hero__left {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .hero__right {
+    grid-row: 1;
+  }
+}/*# sourceMappingURL=Hero.css.map */
